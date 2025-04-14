@@ -1,0 +1,110 @@
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background-image: url('https://cdn.dribbble.com/users/925716/screenshots/3333720/attachments/722375/night.png?resize=400x300&vertical=center'); /* or full URL */
+    background-size: cover;         
+    background-position: center;     
+    background-repeat: no-repeat;  
+    font-family: sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #cloud{
+    size: 100px;
+  }
+body, html {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: sans-serif;
+  }
+  
+  /* Weather container centered */
+  #weather-container {
+    text-align: center;
+    animation: fadeIn 1.5s ease-in-out;
+  }
+  
+  /* Input section styling */
+  #location-container {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    animation: slideUp 1s ease forwards;
+    opacity: 0;
+  }
+  
+  #location-input {
+    padding: 8px 12px;
+    border: 1px solid #aaa;
+    border-radius: 4px;
+    transition: box-shadow 0.3s ease;
+  }
+  
+  #location-input:focus {
+    box-shadow: 0 0 5px #2196f3;
+    outline: none;
+  }
+  
+  #submit-btn {
+    padding: 8px 16px;
+    cursor: pointer;
+    border: 1px solid #000;
+    background-color: #fff;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  
+  #submit-btn:hover {
+    background-color: #2196f3;
+    color: white;
+    transform: scale(1.05);
+  }
+  
+  #weather-info {
+    margin-top: 20px;
+  }
+  
+  #current-weather {
+    font-weight: bold;
+    animation: fadeInUp 1.5s ease;
+  }
+  
+  #forecast-weather {
+    margin-top: 10px;
+    animation: fadeInUp 2s ease;
+  }
+  
+  /* Animations */
+  @keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+  
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes slideUp {
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    from {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+  }
+  
